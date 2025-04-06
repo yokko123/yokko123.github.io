@@ -38,9 +38,10 @@ body {
     text-decoration: underline;
   } */
   a {
-    color: #000000;         /* makes the link black */
-    text-decoration: underline; /* forces underline */
+    color: #000000 !important;
+    text-decoration: underline !important;
   }
+  
   
   a:hover {
     color: #000000;         /* keeps it black on hover */
@@ -69,10 +70,14 @@ body {
     color: #111;
   } */
   .nav a {
-    margin-right: 1em;
-    color: #000;
-    text-decoration: underline;
+    padding: 0 0.5em;
+    border-right: 1px dashed #000;
   }
+  
+  .nav a:last-child {
+    border-right: none;
+  }
+  
   
   .nav a:hover {
     color: #000;

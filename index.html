@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-<h1>Your Name</h1>
+<h1>Md Sazidur Rahman</h1>
+<p>I'm a Doctoral researcher working on Biomedical Images at University of Stavanger.</p>
 
 <p>Some cached thoughts:</p>
 <ul>
@@ -12,9 +13,23 @@ title: Home
   <li>- If you're so smart, why are you unhappy?</li>
 </ul>
 
-<p>Find me on 🐦 📸 💻 📄 ✉️</p>
+<p>
+  Find me on
+  <a href="https://www.linkedin.com/in/mdsazidurrahman/" target="_blank">LinkedIn</a>
+  &
+  <a href="mailto:md.s.rahman@uis.no">Email</a>
+</p>
+
 
 <hr>
+
+<h2>Recent News</h2>
+<ul>
+  {% assign sorted_news = site.news | sort: "date" | reverse %}
+  {% for item in sorted_news limit:3 %}
+    <li><span class="meta">{{ item.date | date: "%Y-%m-%d" }}</span> {{ item.title }}</li>
+  {% endfor %}
+</ul>
 
 <h2>Recent Essays</h2>
 <ul>
@@ -32,10 +47,3 @@ title: Home
   {% endfor %}
 </ul>
 
-<h2>Recent News</h2>
-<ul>
-  {% assign sorted_news = site.news | sort: "date" | reverse %}
-  {% for item in sorted_news limit:3 %}
-    <li><span class="meta">{{ item.date | date: "%Y-%m-%d" }}</span> {{ item.title }}</li>
-  {% endfor %}
-</ul>

@@ -6,26 +6,23 @@ body {
     margin: 3em auto;
     padding: 0 1em;
     line-height: 1.6;
-  }
-  body {
-    font-size: 15px;
+    font-size: 14px; /* 👈 Smaller overall font size */
   }
   
   @media (max-width: 600px) {
     body {
-      font-size: 14px;
+      font-size: 13px; /* 👈 Even smaller on mobile */
     }
   }
   
-  
   h1 {
-    font-size: 1.6em;
+    font-size: 1.4em; /* 👈 Slightly smaller heading */
     margin-bottom: 0.25em;
   }
   
   h2 {
     margin-top: 2em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     border-bottom: 1px solid #ddd;
     padding-bottom: 0.3em;
   }
@@ -36,49 +33,31 @@ body {
   }
   
   li {
-    margin-bottom: 0.7em;
+    margin-bottom: 0.6em;
   }
   
-  /* a {
-    color: #2b6cb0;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  } */
   a {
     color: #000000 !important;
     text-decoration: underline !important;
   }
   
-  
   a:hover {
-    color: #000000;         /* keeps it black on hover */
-    text-decoration: underline; /* keeps underline on hover */
+    color: #000000;
+    text-decoration: underline;
   }
   
   .meta {
     color: #777;
-    font-size: 0.85em;
+    font-size: 0.8em;
     margin-right: 0.6em;
   }
   
   .nav {
-    font-size: 0.9em;
+    font-size: 0.85em;
     margin-bottom: 2em;
     color: #999;
   }
   
-  /* .nav a {
-    margin-right: 1em;
-    color: #999;
-    text-decoration: none;
-  }
-  
-  .nav a:hover {
-    color: #111;
-  } */
   .nav a {
     padding: 0 0.5em;
     border-right: 1px dashed #000;
@@ -88,7 +67,6 @@ body {
     border-right: none;
   }
   
-  
   .nav a:hover {
     color: #000;
   }
@@ -96,7 +74,7 @@ body {
   .footer {
     text-align: center;
     margin-top: 3em;
-    font-size: 0.85em;
+    font-size: 0.8em;
     color: #999;
   }
   

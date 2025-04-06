@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,5 +20,72 @@
       <a href="/publications">Publications</a>
     </p>
   </footer>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} — Md Sazidur Rahman</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      margin-bottom: 2em;
+    }
+    .header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+    .header-title {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2em;
+    }
+    .nav a {
+      padding: 0 0.5em;
+      border-right: 1px dashed #2b6cb0;
+      text-decoration: underline;
+      color: #000;
+    }
+    .nav a:last-child {
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="/avatar.jpeg" alt="Avatar of Md Sazidur Rahman">
+    <div class="header-title">
+      <h1 style="margin: 0;">Md Sazidur Rahman</h1>
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="/essays">Writings</a>
+        <a href="/projects">Side Projects</a>
+        <a href="/news">News</a>
+        <a href="/publications">Publications</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p class="footer">&copy; {{ site.time | date: "%Y" }} Md Sazidur Rahman —
+      <a href="/">Home</a> |
+      <a href="/essays">Writings</a> |
+      <a href="/projects">Side Projects</a> |
+      <a href="/news">News</a> |
+      <a href="/publications">Publications</a>
+    </p>
+  </footer>
+
 </body>
 </html>

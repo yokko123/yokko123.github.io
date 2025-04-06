@@ -6,6 +6,7 @@ body {
     margin: 3em auto;
     padding: 0 1em;
     line-height: 1.6;
+    font-size: 16px; /* 👈 Add or adjust this line */
   }
   
   h1 {

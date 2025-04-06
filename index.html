@@ -16,21 +16,26 @@ title: Home
 
 <hr>
 
-<h2>Essays</h2>
+<h2>Recent Essays</h2>
 <ul>
-  {% assign recent_posts = site.posts | slice: 0, 10 %}
+  {% assign recent_posts = site.posts | slice: 0, 5 %}
   {% for post in recent_posts %}
-    <li>
-      <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <li><span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 
-<hr>
-
-<h2>Side-Projects</h2>
+<h2>Recent Projects</h2>
 <ul>
-  <li><strong><a href="#">You (mL, app)</a>:</strong> A personal, private auto-completion tool</li>
-  <li><strong><a href="#">PlotBot</a>:</strong> AI plotter that visualizes GPT outputs</li>
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% for project in sorted_projects limit:5 %}
+    <li><strong><a href="{{ project.url }}">{{ project.title }}</a></strong> — {{ project.description }}</li>
+  {% endfor %}
+</ul>
+
+<h2>Recent News</h2>
+<ul>
+  {% assign sorted_news = site.news | sort: "date" | reverse %}
+  {% for item in sorted_news limit:3 %}
+    <li><span class="meta">{{ item.date | date: "%Y-%m-%d" }}</span> {{ item.title }}</li>
+  {% endfor %}
 </ul>

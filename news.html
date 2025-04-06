@@ -1,0 +1,13 @@
+---
+layout: default
+title: News
+---
+
+<h1>News</h1>
+
+<ul>
+  {% assign sorted_news = site.news | sort: "date" | reverse %}
+  {% for item in sorted_news %}
+    <li><span class="meta">{{ item.date | date: "%Y-%m-%d" }}</span> {{ item.title }}</li>
+  {% endfor %}
+</ul>

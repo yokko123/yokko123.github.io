@@ -1,7 +1,14 @@
-title: Md Sazidur Rahman
-email: md.s.rahman@uis.no
+title: Your Name
+email: your@email.com
 baseurl: ""
-url: "https://yokko123.github.io"
+url: "https://yourusername.github.io"
 markdown: kramdown
 theme: minima
-permalink: /:year/:month/:day/:title/
+collections:
+  projects:
+    output: true
+  news:
+    output: true
+  publications:
+    output: true
+permalink: /:collection/:name/

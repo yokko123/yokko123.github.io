@@ -6,8 +6,17 @@ body {
     margin: 3em auto;
     padding: 0 1em;
     line-height: 1.6;
-    font-size: 13px; /* 👈 Add or adjust this line */
   }
+  body {
+    font-size: 15px;
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
   
   h1 {
     font-size: 1.6em;

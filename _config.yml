@@ -1,7 +1,7 @@
-title: Your Name
-email: your@email.com
+title: Md Sazidur Rahman
+email: md.s.rahman@uis.no
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://yokko123.github.io"
 markdown: kramdown
 theme: minima
 permalink: /:year/:month/:day/:title/

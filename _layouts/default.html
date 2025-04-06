@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} — Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p class="footer">&copy; {{ site.time | date: "%Y" }} Your Name &mdash;
+      <a href="/">Home</a> |
+      <a href="/essays.html">Essays</a> |
+      <a href="/projects.html">Side Projects</a>
+    </p>
+  </footer>
+</body>
+</html>

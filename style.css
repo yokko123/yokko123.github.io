@@ -29,13 +29,22 @@ body {
     margin-bottom: 0.7em;
   }
   
-  a {
+  /* a {
     color: #2b6cb0;
     text-decoration: none;
   }
   
   a:hover {
     text-decoration: underline;
+  } */
+  a {
+    color: #000000;         /* makes the link black */
+    text-decoration: underline; /* forces underline */
+  }
+  
+  a:hover {
+    color: #000000;         /* keeps it black on hover */
+    text-decoration: underline; /* keeps underline on hover */
   }
   
   .meta {

@@ -5,12 +5,6 @@ title: Home
 
 <h1>Your Name</h1>
 
-<!-- <div class="nav">
-  <a href="/">Home</a> |
-  <a href="/essays.html">Essays</a> |
-  <a href="/projects.html">Side Projects</a>
-</div> -->
-
 <p>Some cached thoughts:</p>
 <ul>
   <li>- Revealed Preferences >>> Stated Preferences.</li>
@@ -19,3 +13,24 @@ title: Home
 </ul>
 
 <p>Find me on 🐦 📸 💻 📄 ✉️</p>
+
+<hr>
+
+<h2>Essays</h2>
+<ul>
+  {% assign recent_posts = site.posts | slice: 0, 10 %}
+  {% for post in recent_posts %}
+    <li>
+      <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+
+<h2>Side-Projects</h2>
+<ul>
+  <li><strong><a href="#">You (mL, app)</a>:</strong> A personal, private auto-completion tool</li>
+  <li><strong><a href="#">PlotBot</a>:</strong> AI plotter that visualizes GPT outputs</li>
+</ul>

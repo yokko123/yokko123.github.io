@@ -1,5 +1,5 @@
 ---
-title: justplotme: GPT3.5 to just plot things
+title: "justplotme: GPT3.5 to just plot things"
 date: 2025-04-05
 ---
 

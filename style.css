@@ -59,7 +59,7 @@ body {
     color: #999;
   }
   
-  .nav a {
+  /* .nav a {
     margin-right: 1em;
     color: #999;
     text-decoration: none;
@@ -67,6 +67,15 @@ body {
   
   .nav a:hover {
     color: #111;
+  } */
+  .nav a {
+    margin-right: 1em;
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .nav a:hover {
+    color: #000;
   }
   
   .footer {

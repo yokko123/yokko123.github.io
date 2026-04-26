@@ -8,6 +8,15 @@ title: Publications
 <ul>
   {% assign sorted_publications = site.publications | sort: "date" | reverse %}
   {% for pub in sorted_publications %}
-    <li><strong>{{ pub.title }}</strong> — {{ pub.journal }} ({{ pub.date | date: "%Y" }})</li>
+    <li>
+      <strong>
+        {% if pub.link %}
+          <a href="{{ pub.link }}" target="_blank">{{ pub.title }}</a>
+        {% else %}
+          {{ pub.title }}
+        {% endif %}
+      </strong>
+      — {{ pub.journal }} ({{ pub.date | date: "%Y" }})
+    </li>
   {% endfor %}
 </ul>

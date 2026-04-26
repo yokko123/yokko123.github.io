@@ -6,68 +6,31 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <link rel="icon" href="/avatar.jpeg" type="image/png">
-  <style>
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 1em;
-      margin-bottom: 2em;
-    }
-    .header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      filter: grayscale(100%);
-      transition: filter 180ms ease;
-    }
-    .header img:hover,
-    .header img:focus {
-      filter: grayscale(0%);
-    }
-    .header-title {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2em;
-    }
-    .nav a {
-      padding: 0 0.5em;
-      border-right: 1px dashed #2b6cb0;
-      text-decoration: underline;
-      color: #000;
-    }
-    .nav a:last-child {
-      border-right: none;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="header">
-    <img src="/avatar.jpeg" alt="Avatar of Md Sazidur Rahman">
+  <header class="site-header">
+    <a class="avatar-link" href="/" aria-label="Home">
+      <img class="site-avatar" src="/avatar.jpeg" alt="Avatar of Md Sazidur Rahman">
+    </a>
     <div class="header-title">
-      <h1 style="margin: 0;">Md Sazidur Rahman</h1>
-      <div class="nav">
+      <h1 class="site-title">Md Sazidur Rahman</h1>
+      <nav class="nav" aria-label="Primary">
         <a href="/">Home</a>
         <a href="/essays">Writings</a>
         <a href="/projects">Projects</a>
         <a href="/news">News</a>
         <a href="/publications">Publications</a>
-      </div>
+      </nav>
     </div>
-  </div>
+  </header>
 
   <main>
     {{ content }}
   </main>
 
-  <footer>
-    <p class="footer">&copy; {{ site.time | date: "%Y" }} Md Sazidur Rahman —
-      <a href="/">Home</a> |
-      <a href="/essays">Writings</a> |
-      <a href="/projects">Projects</a> |
-      <a href="/news">News</a> |
-      <a href="/publications">Publications</a>
-    </p>
+  <footer class="footer">
+    &copy; {{ site.time | date: "%Y" }} Md Sazidur Rahman
   </footer>
 
 </body>

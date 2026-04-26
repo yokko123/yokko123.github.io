@@ -17,6 +17,12 @@
       width: 80px;
       height: 80px;
       border-radius: 50%;
+      filter: grayscale(100%);
+      transition: filter 180ms ease;
+    }
+    .header img:hover,
+    .header img:focus {
+      filter: grayscale(0%);
     }
     .header-title {
       display: flex;

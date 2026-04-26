@@ -45,8 +45,8 @@ body {
 }
 
 .site-avatar {
-  width: 64px;
-  height: 64px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%) contrast(1.05);

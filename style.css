@@ -6,11 +6,13 @@
 }
 
 html {
+  background-color: #ffffff;
   background: var(--paper);
 }
 
 body {
   font-family: 'IBM Plex Mono', monospace;
+  background-color: #ffffff;
   background: var(--paper);
   color: var(--ink);
   max-width: 720px;
